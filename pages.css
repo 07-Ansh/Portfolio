@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Theme Variables */
+:root {
+    --background-color: #0f0f0f;
+    --text-color: #e0e0e0;
+    --primary-color: #b74b4b;
+    --section-bg: #161616;
+    --card-bg: #161616;
+    --shadow-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Light Mode Variables */
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #121212;
+    --primary-color: #b74b4b;
+    --section-bg: #f4f4f4;
+    --card-bg: #f9f9f9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+/* --- Navbar (Fixed, Auto-Hide, Same for All Pages) --- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: top 0.4s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+@media(max-width: 995px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 250px;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        border-left: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        border-bottom-left-radius: 1.5rem;
+        display: none;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* --- Hide header when scrolling down --- */
+.header-hidden {
+    top: -120px;
+}
+
+
+/* --- Container --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* --- Sections --- */
+.section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(183, 75, 75, 0.3);
+    transition: 0.3s;
+    text-align: center;
+    text-size-adjust: 100%;
+    font-size: 1.6rem;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* --- Lists --- */
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* --- Links --- */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Download Button --- */
+.btn-download {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-download:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* --- Certificate Images --- */
+.certificate-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(183, 75, 75, 0.5);
+    margin: 20px 0;
+    transition: 0.3s;
+}
+
+.certificate-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px rgba(183, 75, 75, 0.7);
+}
+
+/* --- Project iframe preview --- */
+.project-live-preview {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.project-live-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Fade-in Animation --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Fade-out Animation (for page transitions) --- */
+@keyframes fadeOutPage {
+    to {
+        opacity: 0;
+    }
+}
+

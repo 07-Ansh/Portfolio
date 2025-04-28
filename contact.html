@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ansh Sharma's Portfolio - Front-End Developer, App Developer, UI/UX Enthusiast">
+  <meta name="author" content="Ansh Sharma">
+    <link rel="stylesheet" href="pages.css">
+  <title>Contact - Ansh Sharma</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Ansh Sharma</a>
+      
+        <nav id="navbar">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="resume.html" class="nav-link">Resume</a>
+          <a href="certifications.html" class="nav-link">Certifications</a>
+          <a href="education.html" class="nav-link">Education</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      
+        <div class="theme-toggle" onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+        </div>
+      </header>
+      
+      
+
+<main class="container  fade-in">
+  <section class="section  fade-in">
+    <h1 class="section-title  fade-in">Contact Me</h1>
+    <ul>
+      <li><strong>Email:</strong> official.ansh@icloud.com</li>
+      <li><strong>Phone:</strong> +91-9653394102</li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ansh-sharma-0724a2284" target="_blank">Connect on LinkedIn</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/07-ansh" target="_blank">Explore GitHub</a></li>
+    </ul>
+
+    <br><br>
+
+    <a href="https://drive.google.com/file/d/1hda2wJaWKy0zH-r4PlncTqaJQ3RxVnfN/view" download class="btn-download">Download Resume</a>
+
+  </section>
+</main>
+<script>
+    const links = document.querySelectorAll('a[href]');
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        const target = link.getAttribute('target');
+        if (!target && !link.href.startsWith('mailto:') && !link.href.startsWith('tel:')) {
+          e.preventDefault();
+          document.body.style.animation = 'fadeOutPage 0.5s ease forwards';
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 400);
+        }
+      });
+    });
+  </script>
+  
+  <style>
+  @keyframes fadeOutPage {
+    to {
+      opacity: 0;
+    }
+  }
+  </style>
+      <script src="script.js"></script>
+  
+</body>
+</html>
