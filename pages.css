@@ -20,7 +20,6 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -43,106 +42,105 @@ body {
     padding-top: 100px;
 }
 
-/* --- Navbar (Fixed, Auto-Hide, Same for All Pages) --- */
 
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 9%;
+    padding: 1rem 9%;
     background-color: var(--background-color);
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     transition: top 0.4s ease;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.logo {
-    font-size: 2.5rem;
-    font-weight: 700;
+.header-hidden {
+    top: -120px;
+}
+
+.logo{
+    font-size: 3rem;
     color: var(--primary-color);
+
+    font-weight: 800;
+    font-size: 25px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
-.logo:hover {
+.logo:hover{
     transform: scale(1.1);
+    color: #5d80aac9;
 }
 
 nav {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    transition: all 0.3s ease;
+
 }
 
 nav a {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--text-color);
     position: relative;
     transition: color 0.3s;
+    border-bottom: 3px solid transparent;
 }
 
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color);
-    transition: width 0.3s;
+nav a:hover,
+nav a.active{
+    color: #5d80aac9;
 }
 
-nav a:hover::after,
-nav a.active::after {
+.theme-toggle {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-left: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+  color: #5d80aa;
+}
+
+
+/* Tablet & smaller */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem 4%;
+  }
+
+  .logo {
+    font-size: 25px;
+    margin-bottom: 0.3rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.2rem;
     width: 100%;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    margin: 0.3rem 0.8rem;
+  }
 }
 
-.menu-icon {
-    display: none;
-    font-size: 3rem;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-@media(max-width: 995px) {
-    nav {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 250px;
-        background-color: var(--background-color);
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
-        border-left: 2px solid var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
-        border-bottom-left-radius: 1.5rem;
-        display: none;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        margin-bottom: 2rem;
-        font-size: 2rem;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-/* --- Hide header when scrolling down --- */
-.header-hidden {
-    top: -120px;
-}
 
 
 /* --- Container --- */

@@ -3,7 +3,7 @@
 :root {
     --background-color: #0f0f0f;
     --text-color: #e0e0e0;
-    --primary-color: var(--primary-color);
+    --primary-color: #5d80aac9; 
     --section-bg: #161616;
     --card-bg: #161616;
     --shadow-color: rgba(255, 255, 255, 0.3);
@@ -13,7 +13,7 @@
   .light-theme {
     --background-color: #ffffff;
     --text-color: #121212;
-    --primary-color: var(--primary-color);
+    --primary-color: #5d80aac9; 
     --section-bg: #f4f4f4;
     --card-bg: #f9f9f9;
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -58,10 +58,7 @@ header {
     transition: top 0.4s ease;
 }
 
-/* This class will hide the header */
-.header-hidden {
-    top: -100px;
-}
+
 
 .logo{
     font-size: 3rem;
@@ -90,42 +87,9 @@ nav a{
 nav a:hover,
 nav a.active{
     color: #5d80aac9;
-    border-bottom: 3px solid #5d80aac9;
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #5d80aac9;
-        border-bottom: 3px solid #5d80aac9;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: var(--section-bg);
 
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #5d80aac9;
-    }
-}
 
 section{
     min-height: 100vh;
@@ -296,21 +260,7 @@ span{
         margin-top: 4rem;
     }
 }
-/* Menu Icon (for mobile) */
-.menu-icon {
-    display: none;
-    font-size: 3rem;
-    color: var(--primary-color);
 
-    cursor: pointer;
-  }
-  
-  @media(max-width: 995px){
-    .menu-icon {
-      display: block;
-    }
-  }
-  
   /* Navbar */
   nav {
     transition: all 0.3s ease;
@@ -380,6 +330,44 @@ span{
   }
   
   
+@media (max-width: 768px) {
   header {
-    transition: top 0.4s ease;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem 4%;
+  }
+
+  .logo {
+    font-size: 18px;
+    margin-bottom: 0.3rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+
+  nav a {
+    margin: 0.3rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Smooth theme change */
+body, header, nav, .section, .container {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
