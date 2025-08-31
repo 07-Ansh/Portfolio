@@ -144,7 +144,7 @@ nav a.active{
   position: absolute;
   right: 0.8rem;
   top: 0.5rem;
-  margin-right: 80px;
+  margin-right: 40px;
   font-size: 1.8rem;
 }
 
@@ -154,7 +154,6 @@ nav a.active{
   .theme-toggle {
   right: 0.8rem;
   top: 0.5rem;
-  margin-right: 80px;
   font-size: 1.8rem;
 }
 
