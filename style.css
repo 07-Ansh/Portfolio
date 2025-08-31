@@ -214,8 +214,21 @@ span{
     height: 100%;
     border-left: 3px solid black;
     right: -8;
+    margin-left: 6px;
     animation: cursor 0.6s infinite;
 }
+
+
+/* Tablet - mobile */
+@media (max-width: 768px) {
+  .typing-text span::after {
+    border-left: 2px solid #5d80aac9;
+        height: 50%;    /* shorter */
+        margin-left: 6px;
+
+  }
+}
+
 
 @keyframes cursor{
     to{
@@ -338,7 +351,7 @@ span{
   }
 
   .logo {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 0.3rem;
   }
 
@@ -352,7 +365,7 @@ span{
 
   nav a {
     margin: 0.3rem 0.8rem;
-    font-size: 1.2rem;
+    font-size: 0.96rem;
   }
 
   .theme-toggle {
