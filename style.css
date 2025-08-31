@@ -332,6 +332,7 @@ span{
     font-size: 3rem;
     cursor: pointer;
     color: var(--primary-color);
+      margin-right: 80px;
     margin-left: 2rem;
 }
 
@@ -384,3 +385,15 @@ body, header, nav, .section, .container {
 * {
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
+
+/* Footer styling */
+
+.footer {
+  background-color: var(--section-bg);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  border-top: 1px solid var(--primary-color);
+}
+
