@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://scary-community-166025.framer.app/sitemap.xml
+Sitemap: https://ansh-sharma.framer.ai/sitemap.xml
