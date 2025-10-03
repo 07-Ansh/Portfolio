@@ -2,63 +2,453 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ansh Sharma's Portfolio - Front-End Developer, App Developer, UI/UX Enthusiast">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ansh Sharma - Front-End Developer & App Developer creating beautiful digital experiences">
   <meta name="author" content="Ansh Sharma">
-    <title>Portfolio Website</title>
+  <title>Ansh Sharma | Front-End Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="pages.css">
 </head>
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <a href="index.html" class="logo">Ansh Sharma</a>
-      
-        <nav id="navbar">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="certifications.html" class="nav-link">Certifications</a>
-          <a href="education.html" class="nav-link">Education</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-      
-        <div class="theme-toggle" onclick="toggleTheme()">
-          <i class="fas fa-moon"></i>
-        </div>
-      </header>
-      
-<section class="home">
-  <div class="home-img animate">
-    <img src="main3.jpg" alt="Ansh Sharma">
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+    <div class="bg-shape shape-4"></div>
   </div>
-  <div class="home-content animate">
-    <h1>Hi, it's <span>Ansh Sharma</span></h1>
-    <h3 class="typing-text">a <span></span></h3>
-    <p>
-      Hi, I’m Ansh Sharma, a Bachelor of Computer Applications student at
-      Lovely Professional University, specializing in Front-End Web
-      and App Development. I focus on building scalable web/mobile applications
-      and have a solid foundation in front-end development. I'm passionate about
-      creating user-friendly interfaces and optimizing performance.
-    </p>
-       <br>
-       <p>Let's connect and explore opportunities together!
-    </p>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/AnshSharma07"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/07-ansh"><i class="fab fa-github"></i></a>
-      <a href="https://x.com/_SharmaAnsh"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span>A</span>
+        <span>S</span>
+      </div>
+      <p>Loading Portfolio</p>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
     </div>
-    <a href="contact.html" class="btn"> Let's Connect</a>
   </div>
-</section>  
-<script src="script.js" defer></script>
 
-<footer class="footer">
-  <p>&copy; 2025 Ansh Sharma. All Rights Reserved.</p>
-</footer>
+  <!-- Navigation -->
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-icon">A</span>
+      <span class="logo-text">Ansh Sharma</span>
+    </a>
+    
+    <nav id="navbar">
+      <a href="index.html" class="nav-link active">
+        <span class="nav-icon"><i class="fas fa-home"></i></span>
+        <span class="nav-text">Home</span>
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-user"></i></span>
+        <span class="nav-text">Resume</span>
+      </a>
+      <a href="certificates.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-certificate"></i></span>
+        <span class="nav-text">Certifications</span>
+      </a>
+      <a href="education.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-graduation-cap"></i></span>
+        <span class="nav-text">Education</span>
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-code"></i></span>
+        <span class="nav-text">Projects</span>
+      </a>
+      <a href="contact.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+        <span class="nav-text">Contact</span>
+      </a>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="toggle-track">
+          <div class="toggle-thumb">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span>Available for new projects</span>
+            </div>
+            <h1 class="hero-title">
+              <span class="title-line">
+                <span class="title-word">Crafting Digital</span>
+              </span>
+              <span class="title-line">
+                <span class="title-word highlight">Experiences</span>
+              </span>
+            </h1>
+            <p class="hero-description">
+              I'm <span class="text-gradient">Ansh Sharma</span>, a passionate Front-End Developer specializing in creating beautiful, functional, and user-centered digital experiences. Currently pursuing my Bachelor of Computer Applications at Lovely Professional University.
+            </p>
+            <div class="hero-buttons">
+              <a href="projects.html" class="btn btn-primary magnetic">
+                <span class="btn-text">View My Work</span>
+                <span class="btn-icon">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+                <span class="btn-background"></span>
+              </a>
+              <a href="contact.html" class="btn btn-secondary magnetic">
+                <span class="btn-text">Get In Touch</span>
+                <span class="btn-icon">
+                  <i class="fas fa-paper-plane"></i>
+                </span>
+              </a>
+            </div>
+            <div class="hero-scroll">
+              <span>Scroll to explore</span>
+              <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="profile-container">
+              <div class="profile-card">
+                <div class="profile-image">
+                  <img src="Main3.jpeg" alt="Ansh Sharma" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzMzIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSJ3aGl0ZSI+QW5zaCBTaGFybWE8L3RleHQ+PC9zdmc+'">
+                  <div class="profile-overlay">
+                    <div class="profile-badge">
+                      <i class="fas fa-code"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-info">
+                  <h3>Ansh Sharma</h3>
+                  <p>Front-End Developer</p>
+                  <div class="profile-stats">
+                    <div class="stat">
+                      <span class="stat-number">5+</span>
+                      <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                      <span class="stat-number">2+</span>
+                      <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat">
+                      <span class="stat-number">4+</span>
+                      <span class="stat-label">Techs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="floating-tech">
+                <div class="tech-icon" style="--delay: 0s">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-icon" style="--delay: 0.5s">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="tech-icon" style="--delay: 1s">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="tech-icon" style="--delay: 1.5s">
+                  <i class="fab fa-react"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Clean Code</h3>
+              <p>Well-structured and maintainable</p>
+            </div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Responsive</h3>
+              <p>Perfect on all devices</p>
+            </div>
+          </div>
+          <div class="stat-card fade-in">
+            <div class="stat-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="stat-content">
+              <h3>Fast</h3>
+              <p>Optimized performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skill-category fade-in">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">React</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category fade-in">
+            <h3 class="category-title">Tools & Others</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Figma</span>
+                  <span class="skill-level">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="70"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C/C++</span>
+                  <span class="skill-level">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A selection of my recent work</p>
+        </div>
+        
+        <div class="projects-showcase">
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <div class="image-placeholder">
+                <i class="fas fa-tint"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://07-ansh.github.io/Water-Availability/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Water Availability Website</h3>
+              <p class="project-description">
+                A dynamic website showcasing global water availability and conservation tips with interactive data visualization.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <div class="image-placeholder">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">C/C++ & MySQL Projects</h3>
+              <p class="project-description">
+                Database management systems and applications built using C, C++, and MySQL.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-cta">
+          <a href="projects.html" class="btn btn-outline">
+            <span class="btn-text">View All Projects</span>
+            <span class="btn-icon">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <span class="logo-icon">A</span>
+              <span class="logo-text">Ansh Sharma</span>
+            </div>
+            <p class="footer-description">
+              Creating beautiful, functional, and user-centered digital experiences.
+            </p>
+            <div class="footer-social">
+              <a href="https://linkedin.com/in/AnshSharma07" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/07-ansh" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/_SharmaAnsh" class="social-link">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="resume.html">Resume</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="link-group">
+              <h3>Connect</h3>
+              <a href="mailto:official.ansh@icloud.com">Email</a>
+              <a href="https://linkedin.com/in/ansh-sharma-0724a2284">LinkedIn</a>
+              <a href="https://github.com/07-ansh">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ansh Sharma. All rights reserved.</p>
+          <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <noscript>
+    <style>
+      .loader { display: none !important; }
+      .fade-in { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 </body>
 </html>

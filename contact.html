@@ -2,74 +2,291 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ansh Sharma's Portfolio - Front-End Developer, App Developer, UI/UX Enthusiast">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Ansh Sharma - Front-End Developer, App Developer, UI/UX Enthusiast">
   <meta name="author" content="Ansh Sharma">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
   <title>Contact - Ansh Sharma</title>
 </head>
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <a href="index.html" class="logo">Ansh Sharma</a>
-      
-        <nav id="navbar">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="resume.html" class="nav-link">Resume</a>
-          <a href="certifications.html" class="nav-link">Certifications</a>
-          <a href="education.html" class="nav-link">Education</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span>A</span>
+        <span>S</span>
+      </div>
+      <p>Loading Contact</p>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-icon">A</span>
+      <span class="logo-text">Ansh Sharma</span>
+    </a>
     
-        <div class="theme-toggle" onclick="toggleTheme()">
-          <i class="fas fa-moon"></i>
+    <nav id="navbar">
+      <a href="index.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-home"></i></span>
+        <span class="nav-text">Home</span>
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-user"></i></span>
+        <span class="nav-text">Resume</span>
+      </a>
+      <a href="certificates.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-certificate"></i></span>
+        <span class="nav-text">Certifications</span>
+      </a>
+      <a href="education.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-graduation-cap"></i></span>
+        <span class="nav-text">Education</span>
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-code"></i></span>
+        <span class="nav-text">Projects</span>
+      </a>
+      <a href="contact.html" class="nav-link active">
+        <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+        <span class="nav-text">Contact</span>
+      </a>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="toggle-track">
+          <div class="toggle-thumb">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </div>
         </div>
-      </header>
-      
-      
+      </div>
+      <div class="mobile-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<main class="container  fade-in">
-  <section class="section  fade-in">
-    <h1 class="section-title  fade-in">Contact Me</h1>
-    <ul>
-      <li><strong>Email:</strong> official.ansh@icloud.com</li>
-      <li><strong>Phone:</strong> +91-9653394102</li>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ansh-sharma-0724a2284" target="_blank">Connect on LinkedIn</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/07-ansh" target="_blank">Explore GitHub</a></li>
-    </ul>
+  <!-- Main Content -->
+  <main id="main-content" class="page-container">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">Let's discuss your next project or opportunity</p>
+        <div class="header-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-dot"></div>
+          <div class="decoration-line"></div>
+        </div>
+      </div>
 
-    <br><br>
+      <!-- Combined Contact Section -->
+      <div class="contact-section fade-in">
+        <div class="contact-container">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2 class="contact-heading">Contact Information</h2>
+            <p class="contact-description">Feel free to reach out through any of these channels. I'm always happy to connect!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Email</h3>
+                  <p>official.ansh@icloud.com</p>
+                  <a href="mailto:official.ansh@icloud.com" class="method-link">
+                    Send Email <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
 
-    <a href="https://drive.google.com/file/d/1mbsmNOXJrxAAz-3GTCDzeH0uCAUNeIjC/view?usp=sharing" download class="btn-download">Download Resume</a>
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-content">
+                  <h3>Phone</h3>
+                  <p>+91-9653394102</p>
+                  <a href="tel:+919653394102" class="method-link">
+                    Call Now <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
 
-  </section>
-</main>
-<script>
-    const links = document.querySelectorAll('a[href]');
-    links.forEach(link => {
-      link.addEventListener('click', function (e) {
-        const target = link.getAttribute('target');
-        if (!target && !link.href.startsWith('mailto:') && !link.href.startsWith('tel:')) {
-          e.preventDefault();
-          document.body.style.animation = 'fadeOutPage 0.5s ease forwards';
-          setTimeout(() => {
-            window.location.href = link.href;
-          }, 400);
-        }
-      });
-    });
-  </script>
-  
-  <style>
-  @keyframes fadeOutPage {
-    to {
-      opacity: 0;
-    }
-  }
-  </style>
-      <script src="script.js"></script>
-  
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="method-content">
+                  <h3>LinkedIn</h3>
+                  <p>Connect professionally</p>
+                  <a href="https://linkedin.com/in/AnshSharma07" target="_blank" class="method-link">
+                    View Profile <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="method-content">
+                  <h3>GitHub</h3>
+                  <p>Explore my code</p>
+                  <a href="https://github.com/07-ansh" target="_blank" class="method-link">
+                    View GitHub <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2 class="contact-heading">Send Me a Message</h2>
+            <p class="contact-description">I'll get back to you as soon as possible</p>
+            
+            <form class="message-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Sections -->
+      <div class="contact-actions">
+        <!-- Resume Download -->
+        <div class="resume-section-contact fade-in">
+          <div class="resume-card">
+            <div class="resume-icon">
+              <i class="fas fa-file-download"></i>
+            </div>
+            <div class="resume-content">
+              <h3>Download My Resume</h3>
+              <p>Get a copy of my detailed resume with all my skills, experience, projects, and contact information in a professional PDF format.</p>
+              <a href="https://drive.google.com/file/d/1mbsmNOXJrxAAz-3GTCDzeH0uCAUNeIjC/view?usp=sharing" 
+                 target="_blank"
+                 class="btn btn-primary btn-download">
+                <span>Download Resume</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Availability Status -->
+        <div class="availability-card fade-in">
+          <div class="availability-indicator available"></div>
+          <div class="availability-content">
+            <h3>Currently Available for Opportunities</h3>
+            <p>I'm actively looking for new projects, internships, and collaboration opportunities. Feel free to reach out if you have an interesting project or if you'd like to discuss potential collaboration!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <span class="logo-icon">A</span>
+              <span class="logo-text">Ansh Sharma</span>
+            </div>
+            <p class="footer-description">
+              Creating beautiful, functional, and user-centered digital experiences.
+            </p>
+            <div class="footer-social">
+              <a href="https://linkedin.com/in/AnshSharma07" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/07-ansh" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/_SharmaAnsh" class="social-link">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="resume.html">Resume</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="link-group">
+              <h3>Connect</h3>
+              <a href="mailto:official.ansh@icloud.com">Email</a>
+              <a href="https://linkedin.com/in/ansh-sharma-0724a2284">LinkedIn</a>
+              <a href="https://github.com/07-ansh">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ansh Sharma. All rights reserved.</p>
+          <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <noscript>
+    <style>
+      .loader { display: none !important; }
+      .fade-in { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 </body>
 </html>

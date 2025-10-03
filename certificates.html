@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ansh Sharma's Certifications - Front-End Developer, App Developer, UI/UX Enthusiast">
+  <meta name="author" content="Ansh Sharma">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="pages.css">
+  <title>Certifications - Ansh Sharma</title>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+  <!-- Navigation -->
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-icon">A</span>
+      <span class="logo-text">Ansh Sharma</span>
+    </a>
+    
+    <nav id="navbar">
+      <a href="index.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-home"></i></span>
+        <span class="nav-text">Home</span>
+      </a>
+      <a href="resume.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-user"></i></span>
+        <span class="nav-text">Resume</span>
+      </a>
+      <a href="certificates.html" class="nav-link active">
+        <span class="nav-icon"><i class="fas fa-certificate"></i></span>
+        <span class="nav-text">Certifications</span>
+      </a>
+      <a href="education.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-graduation-cap"></i></span>
+        <span class="nav-text">Education</span>
+      </a>
+      <a href="projects.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-code"></i></span>
+        <span class="nav-text">Projects</span>
+      </a>
+      <a href="contact.html" class="nav-link">
+        <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+        <span class="nav-text">Contact</span>
+      </a>
+    </nav>
+    
+    <div class="header-actions">
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="toggle-track">
+          <div class="toggle-thumb">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-toggle" onclick="toggleMenu()">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" class="page-container">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">My Certifications</h1>
+        <p class="page-subtitle">Professional credentials and achievements</p>
+        <div class="header-decoration">
+          <div class="decoration-line"></div>
+          <div class="decoration-dot"></div>
+          <div class="decoration-line"></div>
+        </div>
+      </div>
+
+      <!-- Certifications Grid -->
+      <div class="certifications-grid">
+        <!-- AI Essentials Certificate -->
+        <div class="certification-card fade-in">
+          <div class="certification-badge">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="certification-content">
+            <h3>Google AI Essentials</h3>
+            <p class="certification-issuer">Google via Coursera</p>
+            <p class="certification-date">Issued 2024</p>
+            <p class="certification-desc">Fundamentals of artificial intelligence and its practical applications in development workflows. Covers AI concepts, tools, and ethical considerations.</p>
+          </div>
+          <div class="certification-actions">
+            <a href="Certificates/Coursera Google AI Essentials.pdf" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- iOS Development Certificate -->
+        <div class="certification-card fade-in">
+          <div class="certification-badge">
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="certification-content">
+            <h3>iOS Development</h3>
+            <p class="certification-issuer">iOS Development Foundation</p>
+            <p class="certification-date">Issued 2023</p>
+            <p class="certification-desc">Comprehensive iOS app development using Swift and Xcode. Includes UI design, data management, and app deployment to App Store.</p>
+          </div>
+          <div class="certification-actions">
+            <a href="Certificates/Certificate1.jpg" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- Digital Marketing Certificate -->
+        <div class="certification-card fade-in">
+          <div class="certification-badge">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <div class="certification-content">
+            <h3>Fundamentals of Digital Marketing</h3>
+            <p class="certification-issuer">Google Digital Garage</p>
+            <p class="certification-date">Issued 2023</p>
+            <p class="certification-desc">Comprehensive digital marketing strategies including SEO, SEM, social media marketing, email marketing, and analytics.</p>
+          </div>
+          <div class="certification-actions">
+            <a href="Certificates/Certificate2.jpg" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- Python Essentials Certificate -->
+        <div class="certification-card fade-in">
+          <div class="certification-badge">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="certification-content">
+            <h3>Python Essentials</h3>
+            <p class="certification-issuer">Python Institute</p>
+            <p class="certification-date">Issued 2023</p>
+            <p class="certification-desc">Core Python programming concepts and practical application development. Covers data structures, OOP, and real-world projects.</p>
+          </div>
+          <div class="certification-actions">
+            <a href="Certificates/Certificate3.jpg" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- Full Stack Certificate -->
+        <div class="certification-card fade-in">
+          <div class="certification-badge">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <div class="certification-content">
+            <h3>Full Stack Web Development</h3>
+            <p class="certification-issuer">Web Development Bootcamp</p>
+            <p class="certification-date">Issued 2023</p>
+            <p class="certification-desc">End-to-end web development including frontend and backend technologies. MERN stack with database management and deployment.</p>
+          </div>
+          <div class="certification-actions">
+            <a href="Certificates/Certificate4.jpg" target="_blank" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
+        <!-- More to come card -->
+        <div class="certification-card coming-soon fade-in">
+          <div class="certification-badge">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="certification-content">
+            <h3>More Certifications Coming Soon</h3>
+            <p class="certification-desc">Continuously learning and adding new skills to my portfolio. Currently working on advanced React, Node.js, and cloud computing certifications.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Section -->
+      <div class="progress-section fade-in">
+        <div class="progress-card">
+          <h3>Learning Journey</h3>
+          <p>Continuously expanding my skill set through certifications and practical projects to stay updated with the latest technologies and industry trends.</p>
+          <div class="progress-stats">
+            <div class="progress-stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="progress-stat">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Skill Areas</span>
+            </div>
+            <div class="progress-stat">
+              <span class="stat-number">Ongoing</span>
+              <span class="stat-label">Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <span class="logo-icon">A</span>
+              <span class="logo-text">Ansh Sharma</span>
+            </div>
+            <p class="footer-description">
+              Creating beautiful, functional, and user-centered digital experiences.
+            </p>
+            <div class="footer-social">
+              <a href="https://linkedin.com/in/AnshSharma07" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/07-ansh" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/_SharmaAnsh" class="social-link">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="link-group">
+              <h3>Navigation</h3>
+              <a href="index.html">Home</a>
+              <a href="resume.html">Resume</a>
+              <a href="projects.html">Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="link-group">
+              <h3>Connect</h3>
+              <a href="mailto:official.ansh@icloud.com">Email</a>
+              <a href="https://linkedin.com/in/ansh-sharma-0724a2284">LinkedIn</a>
+              <a href="https://github.com/07-ansh">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Ansh Sharma. All rights reserved.</p>
+          <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <noscript>
+    <style>
+      .loader { display: none !important; }
+      .fade-in { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</body>
+</html>
