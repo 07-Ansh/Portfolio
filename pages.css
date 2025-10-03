@@ -1,4 +1,4 @@
-/* Optimized Styles for Resume, Certificates, Projects, Education, Contact pages */
+/* Styles for Resume, Certificates, Projects, Education, Contact pages */
 
 /* ========== RESUME PAGE STYLES ========== */
 .resume-content {
@@ -41,7 +41,6 @@
   margin: 0;
 }
 
-/* Updated Skills Section - 4 Boxes Layout */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
