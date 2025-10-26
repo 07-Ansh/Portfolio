@@ -67,7 +67,3 @@ Custom-built database and algorithmic applications developed from scratch.
 ---
 
 > *“Code is like art—every line tells a story.”* 🎨👨‍💻
-
----
-
-Let me know if you’d like to add sections such as **Screenshots**, **Contact Form**, or **Clone Instructions** for GitHub!
