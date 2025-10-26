@@ -1,40 +1,73 @@
 
-✨ Overview
-Welcome to my personal portfolio website — a digital space that showcases who I am, what I do, and the projects I've done
-Built with love, passion, and clean code ❤️
-🌍 Live Demo: ansh07-portfolio.vercel.app
+# 🌐 Portfolio - Ansh Sharma
 
-🧑‍💻 About Me
-Hi, I’m Ansh Sharma, a Front-End Developer and tech enthusiast.
-I enjoy turning creative ideas into real, responsive, and user-friendly digital experiences.
-🎓 Bachelor of Computer Applications (BCA) student at Lovely Professional University
-💡 Focused on JavaScript, React, and modern web technologies
+Welcome to my **personal portfolio website** — a digital space that showcases who I am, what I do, and the projects I’ve built.
+**Crafted with passion, precision, and clean code.** ❤️
 
-🚀 Tech Stack
-HTML5, CSS3, JavaScript, React
-MySQL
-Git, Figma, Vercel
-C, C++, JavaScript
+🚀 **Live Demo:** **[ansh07-portfolio.vercel.app](https://ansh07-portfolio.vercel.app)**
 
-🌟 Key Features
-✅ Fully Responsive — Optimized for all devices
-⚡ Fast and Lightweight — Minimal load time with clean code
-🎨 Modern UI/UX — Designed with simplicity and clarity
-📁 Project Showcase — Highlights my top projects and achievements
-📬 Easy Contact — Direct links to connect with me
+---
 
-🧩 Projects Highlight
-🔹 Water Availability Website
-A web app visualizing global water availability data and conservation insights.
-Tech Used: HTML5, CSS3, JavaScript
+## 👨‍💻 About Me
 
-🔹 MySQL & C/C++ Applications
-Custom database and algorithm-based applications built from scratch.
-Tech Used: C, C++, MySQL
+Hi, I’m **Ansh Sharma**, a Front-End Developer and tech enthusiast.
+I love transforming creative ideas into real, responsive, and user-friendly digital experiences.
 
-➡️ Explore more on my Portfolio ansh07-portfolio.vercel.app
+* 🎓 **Bachelor of Computer Applications (BCA)** at Lovely Professional University
+* 💡 Passionate about **JavaScript, React, and modern web technologies**
+* 🌱 Always learning & building to push the boundaries of web development
 
-🎯 Future Goals
-Expand my portfolio with React-based projects
-Learn backend technologies like Node.js & Express
-Build full-stack applications and contribute to open-source
+---
+
+## 🛠 Tech Stack
+
+| Frontend                       | Backend / Database | Tools & Platforms  | Programming Languages |
+| ------------------------------ | ------------------ | ------------------ | --------------------- |
+| HTML5, CSS3, JavaScript, React | MySQL              | Git, Figma, Vercel | C, C++, JavaScript    |
+
+---
+
+## 🌟 Portfolio Features
+
+- ✅ **Fully Responsive** – Mobile-first design  
+- ⚡ **Fast & Lightweight** – Minimal load time  
+- 🎨 **Modern UI/UX** – Clean and elegant interface  
+- 📁 **Interactive Projects Showcase**  
+- 📬 **Easy Contact Integration**
+
+
+---
+
+## 🧩 Featured Projects
+
+### 🔹 Water Availability Website
+
+A web application visualizing global water data and highlighting conservation insights.
+**Tech Used:** HTML5, CSS3, JavaScript
+
+### 🔹 MySQL & C/C++ Applications
+
+Custom-built database and algorithmic applications developed from scratch.
+**Tech Used:** C, C++, MySQL
+
+---
+
+## 🎯 Future Goals
+
+* 🚀 Build more React-based projects
+* 🌐 Learn backend technologies like **Node.js & Express**
+* 🤝 Contribute to **open-source** and become a full-stack developer
+
+---
+
+## 📬 Connect With Me
+
+🌍 **Portfolio:** [https://ansh07-portfolio.vercel.app](https://ansh07-portfolio.vercel.app)
+
+---
+
+> *“Code is like art—every line tells a story.”* 🎨👨‍💻
+
+---
+
+Let me know if you’d like to add sections such as **Screenshots**, **Contact Form**, or **Clone Instructions** for GitHub!
